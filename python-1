@@ -1,1 +1,47 @@
-this is a file of the a pyhton project.
+
+print("....WEL_COME TO TASK MANAGE MENT SYSTEM.... ")
+tasks=[]
+total_task=int(input("Enter the total task: "))
+for i in range(1,total_task+1):
+    task_name=input("Enter the task: ")
+    tasks.append(task_name)
+
+print("Enter 1-add\n2-update\n3-delect\n4-view\n5-exist")
+while True:
+    operation=int(input("Enter the number what you perform: "))
+    if operation==1:
+        add=input("add the task: ")
+        tasks.append(add)
+        print(f"the task  {add} has been added..😍")
+    elif(operation==2):
+        update_val=input("Enter the task: ")
+        up=input("Enter the update_task: ")
+        if update_val in tasks:
+            ind=tasks.index(update_val)
+            tasks[ind]=up
+            print(f"the task  {up} has been updateed....👌")
+               
+    elif(operation==3):
+        delect=input("Enter the task: ")
+        if delect in tasks:
+            de=tasks.index(delect)
+            del(tasks[de])
+            print(f"The task{delect} has been delected..😒 ")
+    elif(operation==4):
+        print(f"The view of the task is {tasks}: ")
+
+    elif(operation==5):
+        print("Thanks for using this app..💕!")
+        break
+    else:
+        print("please..! Enter the valide number ..")
+
+
+
+            
+
+
+
+
+
+
