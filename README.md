@@ -17,3 +17,5 @@ while True:
   system2=random.randint(1,6)
 
   print("The dice between 1 to 6 :",system1,system2)
+
+  print("thanks for playing our game")
